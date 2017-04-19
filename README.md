@@ -1,2 +1,2 @@
 # Quiz
-Quiz perguntas e respostas EditText
+Quiz perguntas e respostas RadioButton
