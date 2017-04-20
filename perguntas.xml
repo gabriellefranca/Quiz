@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perguntas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gabi2.quizradiobutton.perguntas"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                    android:text="Questão 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/questao1"
+                    android:textColor="#000"
+                    android:fontFamily="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="120dp"
+
+                    />
+
+            <TextView
+                    android:text="O que significa Cláusula Static?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pergunta"
+                    android:textColor="#000"
+                    android:fontFamily="bold"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"/>
+
+            <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6" />
+
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                <RadioButton
+                        android:text="Cláusula que nunca muda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resposta1"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RadioButton
+                        android:text="Clausula que não permanece a mesma emm todas as classes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resposta2"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RadioButton
+                        android:text="Cláusula que permanece a mesma para todas as classes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resposta3"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RadioButton
+                        android:text="Cláusula Estática"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resposta4"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RadioButton
+                        android:text="Cláusula que não ocorrem mudanças"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/resposta5"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"/>
+                </RadioGroup>
+
+            <Button
+                    android:text="Conferir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enviar"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:fontFamily="bold"/>
+
+            <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/warning" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
